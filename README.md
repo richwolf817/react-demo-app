@@ -10,4 +10,18 @@ Sharing a component from any app or project becomes a simple process of using Bi
 
 Each component you share can be quickly used in different apps, and will from now-on always be available for reuse. You will also get auto-docs, a visual sandbox and much more out of the box. And, it plays with npm and yarn so you can install components just like any other package.
 
+## Notes on Build and Run
+
+Build
+  npm install
+  npm run build
+
+Run
+  npm serve build
+
+Docker
+  docker build --progress=plain -t react/demo:lastest .
+  docker run -p 3000:3000 react/demo:lastest
+
+
 ### [Learn more](https://blog.bitsrc.io/writing-scalable-code-with-shared-react-components-86f702df6582)
