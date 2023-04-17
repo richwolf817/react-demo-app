@@ -20,8 +20,9 @@ Run
   npm serve build
 
 Docker
-  docker build --progress=plain -t react/demo:lastest .
-  docker run -p 3000:3000 react/demo:lastest
+  docker build --progress=plain -t gwfcdt/react-demo-app:latest .
+  docker run -p 3000:3000 gwfcdt/react-demo-app:latest
+  docker push gwfcdt/react-demo-app:latest
 
 
 ### [Learn more](https://blog.bitsrc.io/writing-scalable-code-with-shared-react-components-86f702df6582)

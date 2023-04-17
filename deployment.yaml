@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: react-demo-app
-        image: react/demo
+        image: gwfcdt/react-demo-app
         resources:
           requests:
             cpu: "100m"
