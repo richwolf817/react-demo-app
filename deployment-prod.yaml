@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-demo-app
+  namespace: production
+  labels:
+    app: react-demo-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react-demo-app
+  template:
+    metadata:
+      labels:
+        app: react-demo-app
+    spec:
+      containers:
+      - name: react-demo-app
+        image: gwfcdt/react-demo-app
+        resources:
+          requests:
+            cpu: "100m"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
